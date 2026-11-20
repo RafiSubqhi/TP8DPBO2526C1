@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DATA_FORM_TITLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.php">Academic MVC</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.php">Lecturers</a></li>
+          <li class="nav-item"><a class="nav-link active" href="department.php">Departments</a></li>
+          <li class="nav-item"><a class="nav-link" href="course.php">Courses</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="col-lg-6 m-auto my-5">
+    <form method="post" action="department.php">
+      <div class="card">
+        <div class="card-header DATA_HEADER_BG">
+          <h3 class="text-white text-center mb-0">DATA_FORM_TITLE</h3>
+        </div>
+        <div class="card-body">
+          <input type="hidden" name="id" value="DATA_ROW_ID">
+
+          <div class="mb-3">
+            <label class="form-label">DEPARTMENT NAME:</label>
+            <input type="text" name="department_name" value="DATA_DEPT_NAME" class="form-control" required>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">FACULTY:</label>
+            <input type="text" name="faculty" value="DATA_DEPT_FACULTY" class="form-control" required>
+          </div>
+
+          <button class="btn btn-success" type="submit" name="DATA_BTN_NAME">Submit</button>
+          <a class="btn btn-secondary" href="department.php">Cancel</a>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
